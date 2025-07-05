@@ -1,0 +1,39 @@
+<!-- templates/contact.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Contact</title>
+  <link rel="stylesheet" href="static\assets\style.css">
+</head>
+<body>
+  <header>
+    <h1>Contact Me</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <form method="POST">
+      <input type="text" name="name" placeholder="Your Name" required />
+      <input type="email" name="email" placeholder="Your Email" required />
+      <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+      <!-- Replace button text with icon -->
+      <button class="toggle-btn" onclick="toggleTheme()">🌞 Send Message</button>
+
+    </form>
+
+    <h3>Messages Received</h3>
+    
+      <div class="project-card">
+        <strong> NAME </strong> EMAIL<br>
+        <p>MESSAGE</p>
+      </div>
+    
+  </div>
+
+  <footer>© Irfan Portfolio</footer>
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Portfolio</title>
+  <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"> -->
+   <link rel="stylesheet" href="static\assets\style.css">
+</head>
+<body>
+  <header>
+    <h1>Hi, I'm Irfan 👋</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+    <div class="container about-section">
+  <h2>👋 About Me</h2>
+
+  <p>
+    Hello! I'm <strong>Mohammed Irfan</strong>, a passionate full-stack developer with a focus on frontend design, clean backend logic, and solving real-world problems using tech.
+  </p>
+
+  <p>
+    I enjoy building user-friendly interfaces, writing efficient backend APIs, and learning new tools. I'm constantly improving my skills in <strong>DSA</strong> and applying them to software development.
+  </p>
+
+  <h3>💡 My Skills</h3>
+  <ul class="skills">
+    <li>Frontend: HTML, CSS, JavaScript, React</li>
+    <li>Backend: Python, Flask, Node.js</li>
+    <li>Database: SQLite, MongoDB</li>
+    <li>Tools: Git, VS Code, Postman, Replit</li>
+  </ul>
+
+  <h3>🎓 Education</h3>
+  <p>Bachelor’s Degree in Computer Science - [Your University Name]</p>
+
+  <h3>🚀 Career Goals</h3>
+  <p>
+    My mission is to create products that help people, solve meaningful problems, and contribute to impactful software teams. I aim to grow into a full-stack software engineer and contribute to open-source.
+  </p>
+
+  <a href="{{ url_for('static', filename='assets/resume.pdf') }}" class="resume-link" download>📄 Download Resume</a>
+</div>
+  
+
+  <footer>© Irfan Portfolio</footer>
+</body>
+</html>
