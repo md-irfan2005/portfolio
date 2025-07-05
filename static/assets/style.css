@@ -1,0 +1,138 @@
+/* static/css/style.css */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #727070;
+  color: #3d313b;
+}
+
+header {
+  background: #343a40;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 15px;
+}
+
+.container {
+  padding: 30px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.project-card {
+  background: white;
+  padding: 20px;
+  margin: 20px 0;
+  border-left: 5px solid #007bff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  border-radius: 8px;
+}
+
+form input, form textarea {
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+form button {
+  margin-top: 15px;
+  padding: 12px 20px;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #343a40;
+  color: white;
+  margin-top: 50px;
+}
+/* Theme transition */
+body {
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+/* Animate all background-based elements */
+.container, .project-card, form input, form textarea {
+  transition: background-color 0.5s ease, color 0.5s ease, box-shadow 0.4s;
+}
+
+/* Animate the toggle button */
+.toggle-btn {
+  transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+/* Rotation animation for the icon */
+.toggle-btn.animate {
+  transform: rotate(180deg) scale(1.1);
+}
+
+/* Optional: Fade-in on load */
+body.fade-in {
+  animation: fadeIn 0.6s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+.about-section {
+  background: var(--card-bg);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.08);
+  margin-top: 30px;
+  animation: fadeIn 0.6s ease;
+}
+
+.about-section h2, h3 {
+  color: var(--primary);
+  margin-top: 20px;
+}
+
+.about-section p {
+  line-height: 1.7;
+  margin-bottom: 15px;
+}
+
+.skills {
+  list-style: none;
+  padding-left: 0;
+}
+
+.skills li {
+  background: rgba(0, 123, 255, 0.1);
+  color: var(--primary);
+  padding: 8px 12px;
+  margin-bottom: 8px;
+  border-radius: 8px;
+  font-weight: 500;
+}
+
+.resume-link {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: var(--primary);
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.resume-link:hover {
+  background: #0056b3;
+}
